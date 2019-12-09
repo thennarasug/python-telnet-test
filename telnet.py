@@ -2,8 +2,12 @@
 import sys
 import telnetlib
 
-host=sys.argv[1]
-portno=sys.argv[2]
+#host=sys.argv[1]
+#portno=sys.argv[2]
+
+host=input("enter hostname:")
+portno=input("enter host number:")
+
 
 try:
     conn = telnetlib.Telnet(host,portno)
